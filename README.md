@@ -62,3 +62,30 @@
 - `docker ps` (-a)
 - `docker exec -it` (/bin/bash) (ls, cd, pwd, env, exit)
 - `docker logs`
+
+## 2. Demo project overview
+
+![Workflow with docker](./assets/workflow-with-docker.png "Work flow with docker")
+
+- [source ref](https://gitlab.com/nanuchi/techworld-js-docker-demo-app)
+
+### Run container
+
+### Using dockerfile to build docker image
+
+Note:
+
+- Docker network connect two containers (if their in the same network)
+
+- Restart container -> data is gone (**using volumes for data persistence**)
+
+- Using docker-compose file to structure command when using docker to run container (also it **auto did the network stuff** for you)
+
+- Adjust dockerfile -> rebuild the image
+
+Command:
+
+- `docker-compose up -d`
+- `docker rm`
+- `docker rmi`
+- `docker build` (-t)
