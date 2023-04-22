@@ -89,3 +89,31 @@ Command:
 - `docker rm`
 - `docker rmi`
 - `docker build` (-t)
+
+# Day - 3
+
+## Docker registry
+
+- Docker private repository (on AWS ECR, AWS CLI, Credential configure)
+
+- Registry options
+
+- Image naming in docker registries (registryDomain/imageName:tag)
+
+Command:
+
+- `docker images`
+- `docker login`
+- `docker push`/
+
+## Deploy
+
+- Add my-app image (project image) on the docker-compose file
+
+- change the MongoCLient.connect url to mongodb
+
+## Persisting Data with Volumes
+
+- should use **Named Volume** volumes when working with product
+
+- change from container affect host and vice versa (speicific file is configured in docker-compose `volumes` or `-v` if using CLI)
